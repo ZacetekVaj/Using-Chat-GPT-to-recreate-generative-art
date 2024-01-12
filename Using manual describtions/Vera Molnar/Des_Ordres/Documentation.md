@@ -39,7 +39,8 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 
 ```
 **Image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-1.png)
 
 **Prompt:**
 Now generate 20 of these squares one next to the other in a grid pattern
@@ -82,7 +83,8 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 
 ```
 **Image:**
-![Drugi poskus](images/image.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image.png)
 
 **Prompt:**
 Each of the generated squares should have nested squares inside of them
@@ -133,8 +135,10 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
   popMatrix();
 }
 ```
+
 **Image:**
-![Tretji poskus](images/image-2.png)
+
+![Tretji poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-2.png)
 
 **Prompt:**
 Now make it so that the number of inside squares within each square is random
@@ -188,7 +192,7 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 
 ```
 **Image:**
-![Četrti poskus](images/image-3.png)
+![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-3.png)
 
 **Prompt:**
 Now make the rotations a bit smaller
@@ -242,8 +246,10 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 
 
 ```
+
 **Image:**
-![Peti poskus](images/image-4.png)
+
+![Peti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-4.png)
 
 **Prompt:**
 Now do a really tiny disruption of square shapes
@@ -296,8 +302,10 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
   popMatrix();
 }
 ```
+
 **Image:**
-![Šesti poskus](images/image-5.png)
+
+![Šesti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-5.png)
 
 **Prompt:**
 Make the squares adjecent to eachother
@@ -352,7 +360,8 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 
 ```
 **Image:**
-![Sedmi poskus](images/image-6.png)
+
+![Sedmi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-6.png)
 
 **Prompt:**
 Adjust the screen size to 800,800 also adjust square spacing variable to 0
@@ -406,8 +415,10 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 }
 
 ```
+
 **Image:**
-![Osmi poskus](images/image-7.png)
+
+![Osmi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-7.png)
 
 **Prompt:**
 Adjust the minimal number of squares to 5 and maximal to 8
@@ -461,5 +472,7 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 }
 
 ```
+
 **Image:**
-![Končni poskus](images/image-8.png)
+
+![Končni poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-8.png)
