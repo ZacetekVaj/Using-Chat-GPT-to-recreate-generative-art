@@ -87,8 +87,10 @@ class Line {
   }
 }
 ```
+
 **Resulting image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image.png)
 
 **Prompt:**
 could you make it so the section erased is bigger and more noticable?
@@ -174,8 +176,10 @@ class Line {
   }
 }
 ```
+
 **Resulting image:**
-![Drugi poskus](images/image-1.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image-1.png)
 
 **Prompt:**
 Try to erase areas rather than singular line sections
@@ -265,8 +269,10 @@ class Line {
 }
 
 ```
+
 **Resulting image:**
-![Tretji poskus](images/image-2.png)
+
+![Tretji poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image-2.png)
 
 **Prompt:**
 could you also make it so that if a line is erased by less than 50% it stays visible instead of being erased?
@@ -373,8 +379,10 @@ class Line {
 }
 
 ```
+
 **Resulting image:**
-![Četrti poskus](images/image-3.png)
+
+![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image-3.png)
 
 **Prompt:**
 could you make it so that there is 10000 lines on the screen, make the lines 5 times shorter
@@ -481,8 +489,10 @@ class Line {
 }
 
 ```
+
 **Resulting image:**
-![Peti poskus](images/image-4.png)
+
+![Peti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image-4.png)
 
 **Prompt:**
 Make it so the line is not completely erased if less than 50% of it is in the interruption, make interruptions less frequent.
@@ -591,7 +601,9 @@ class Line {
   }
 }
 ```
+
 **Resulting image:**
-![Končni poskus](images/image-5.png)
+
+![Končni poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Interruptions/Images/image-5.png)
 
 
