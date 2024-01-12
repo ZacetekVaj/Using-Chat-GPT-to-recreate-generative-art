@@ -75,7 +75,8 @@ void mousePressed() {
 
 ```
 **Image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image.png)
 
 **Prompt:**
 Now use E4, code you wrote and this describtion to create a code in processing for it: A rectangular surface filled with instances of E4, each with a different size and direction. Display the intersections of E4 by drawing a circle at each point of contact. Set the size of each circle relative to the distance between the centers of the overlapping E4's. Draw the smallest possible circle as white and the largest as black, with varying grays representing sizes in between. E4 needs to still be defined by the code as previously
@@ -169,7 +170,8 @@ class E4Instance {
 }
 ```
 **Image:**
-![Drugi poskus](images/image-1.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image-1.png)
 
 **Prompt:**
 Add more colors, biggest circle should be black, color should go from black to camo green, gray, gray blue, pink and at the end smallest circles should be white. Remove the outline for circles.
@@ -284,7 +286,8 @@ class E4Instance {
 
 ```
 **Image:**
-![Tretji poskus](images/image-2.png)
+
+![Tretji poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image-2.png)
 
 **Prompt:**
 When  circles intersect the circle created by intersection should stay on the screen
@@ -406,7 +409,8 @@ class E4Instance {
 
 ```
 **Image:**
-![Četrti poskus](images/image-3.png)
+
+![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image-3.png)
 **Additional:**
 In the picture, we can observe that the sizes of the drawn circles depend on their positions. Since I couldn't formulate a question to make the sizes of the drawn circles correct, in the next step, I asked to write the code so that the sizes of the drawn circles would be random, to achieve at least a somewhat similar distribution as in the original picture.
 **Prompt:**
@@ -527,5 +531,6 @@ class E4Instance {
 
 ```
 **Image:**
-![Peti poskus](images/image-4.png)
+
+![Peti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image-4.png)
 
