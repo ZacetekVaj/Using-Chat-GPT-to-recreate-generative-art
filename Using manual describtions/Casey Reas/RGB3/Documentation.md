@@ -51,6 +51,7 @@ void drawLine(int centerX, int centerY, int size, float angle) {
 
 **Prompt:**
 The lines should start from one side of the canvas and stretch to the other
+
 **Code from the anwser:**
 ```java
 void setup() {
@@ -237,6 +238,7 @@ void drawLines(float y, float angle) {
 
 **Prompt:**
 Lines still dont start on the edge of canvas
+
 **Code from the anwser:**
 ```java
 void setup() {
