@@ -4,6 +4,7 @@
 [Models website](https://www.astica.org/vision/describe/)
 
 **Input image:**
+
 ![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/Astica/Images/image.png)
 
 **Output:**
@@ -89,6 +90,7 @@ void drawClouds(float x, float y, float width, float height, int numClouds) {
 
 ```
 **Resulting image:**
+
 ![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/Astica/Images/image-1.png)
 
 ### Conclusion
