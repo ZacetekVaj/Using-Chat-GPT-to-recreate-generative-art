@@ -4,7 +4,8 @@
 [Models website](https://github.com/pharmapsychotic/clip-interrogator)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Clip-interrogator/Images/image.jpg)
 [Interruptions](https://dam.org/museum/artists_ui/artists/molnar-vera/interruptions/)
 
 **Output:**
@@ -43,7 +44,8 @@ void setup() {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Clip-interrogator/Images/image.png)
 
 ### Conclusion
 
