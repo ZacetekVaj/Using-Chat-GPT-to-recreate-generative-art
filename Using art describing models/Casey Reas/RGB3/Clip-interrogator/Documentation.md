@@ -4,7 +4,8 @@
 [Models website](https://github.com/pharmapsychotic/clip-interrogator)
 
 **Input image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/Clip-interrogator/Images/image.png)
 
 **Output:**
 a close up of a plaid pattern on a piece of fabric, pastel blues and pinks, inspired by Charles Hinman, high resolution product photo, on a gray background, inspired by Yamaguchi Kayo, diagonal, highly detailed product photo, trio, by Peter Alexander Hay, chiffon, 6, border pattern, patchwork-streak style, high detail product photo
@@ -44,7 +45,8 @@ void drawPlaid() {
 }
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/Clip-interrogator/Images/image-1.png)
 
 ### Conclusion
 
