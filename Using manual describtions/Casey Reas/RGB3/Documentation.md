@@ -429,6 +429,7 @@ void drawLines(float angle) {
 **Resulting image:**
 
 ![Deveti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-8.png)
+
 **Prompt:**
 Now make the lines closer together aswell
 
@@ -476,6 +477,7 @@ void drawLines(float angle, int stepSize) {
 **Resulting image:**
 
 ![Deseti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-9.png)
+
 **Prompt:**
 There should be a random period of lines not being drawn
 
@@ -539,6 +541,7 @@ void drawLines(float angle, int stepSize) {
 **Resulting image:**
 
 ![Enajsti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-10.png)
+
 **Prompt:**
 The chance of no draw period should be random, not after 50 lines
 
@@ -608,4 +611,5 @@ void drawLines(float angle, int stepSize) {
 In line "if (random(1) > 0.2)" was replaced with "if(true)".
 
 **Image for angles 71°-13°-68°:**
+
 ![Končen poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-12.png)
