@@ -82,6 +82,7 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 }
 
 ```
+
 **Image:**
 
 ![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image.png)
@@ -191,6 +192,7 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 }
 
 ```
+
 **Image:**
 ![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-3.png)
 
@@ -359,6 +361,7 @@ void drawConcentricSquare(float x, float y, float size, float rotation) {
 }
 
 ```
+
 **Image:**
 
 ![Sedmi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Vera%20Molnar/Des_Ordres/Images/image-6.png)
