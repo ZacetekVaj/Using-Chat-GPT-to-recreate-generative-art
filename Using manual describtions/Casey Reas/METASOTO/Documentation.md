@@ -64,7 +64,8 @@ void mousePressed() {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image.png)
 
 **Prompt:**
 White lines should move from right edge of the screen to the left, they also should not leave a trail
@@ -112,7 +113,8 @@ void mousePressed() {
 }
 ```
 **Resulting image:**
-![Drugi poskus](images/image-1.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-1.png)
 
 **Prompt:**
 The  lines moving from right to left should extend from right edge to left edge
@@ -163,7 +165,8 @@ void mousePressed() {
 
 ```
 **Resulting image:**
-![Tretji poskus](images/image-2.png)
+
+![Tretji poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-2.png)
 
 **Prompt:**
 The moving lines should extend infinitely beyond the left edge
@@ -218,7 +221,8 @@ void mousePressed() {
 
 ```
 **Resulting image:**
-![Četrti poskus](images/image-3.png)
+
+![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-3.png)
 
 **Prompt:**
 Make the black static and moving lines start at random angles, static lines should be in front of the moving lines
@@ -303,7 +307,8 @@ void mousePressed() {
 }
 ```
 **Resulting image:**
-![Peti poskus](images/image-4.png)
+
+![Peti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-4.png)
 
 **Prompt:**
 Make less black lines but make them longer
@@ -383,7 +388,8 @@ void mousePressed() {
 
 ```
 **Resulting image:**
-![Šesti poskus](images/image-5.png)
+
+![Šesti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-5.png)
 
 **Prompt:**
 Make the black lines black colored
@@ -481,6 +487,7 @@ void mousePressed() {
 
 ```
 **Resulting image:**
-![Končen poskus](images/image-6.png)
+
+![Končen poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/METASOTO/Images/image-6.png)
 
 **Additional:** In the code there were some changes needed, importantly part under ```Reset black lines``` had to be erased.
