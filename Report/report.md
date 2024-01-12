@@ -26,7 +26,7 @@ Two artists, Casey Reas and Vera Molnar, were used for the original images used 
 #### 3.1.1. Casey reas:
 ##### 3.1.1.1: RGB 3 series: 
 [RGB 3 series](https://reas.com/rgb_3/) series comprises six drawings featuring three sets of lines—red, green, and blue. These lines are created with random angles, and certain lines within each set are randomly skipped. The original image is displayed below:
-![RGB3](images/image.png) 
+![RGB3](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image.png) 
 The recreated image is displayed below:
 ![RGB3 - recreation](images/image-12.png)
 From both images, it is evident that they share a similar color scheme. The primary distinction lies in the intensity of colors in the recreated image. Nevertheless, Chat-GPT's generated code successfully captures most of the essential details:
