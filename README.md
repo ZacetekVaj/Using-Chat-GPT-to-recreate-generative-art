@@ -1,5 +1,6 @@
 # Project for course "Interaktivnost in oblikovanje informacij - Fakulteta za računalništvo in informatiko":
 # Using Chat-GPT to recreate generative art
+Conclusion and results can be found under the folder Report
 # Image sources:
 Vera Molnar:
 - https://dam.org/museum/artists_ui/artists/molnar-vera/interruptions/
