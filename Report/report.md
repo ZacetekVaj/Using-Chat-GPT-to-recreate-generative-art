@@ -109,6 +109,7 @@ In this section, METASOTO and Process 14 (Software 3) were excluded due to their
 #### 3.2.2. Images
 ##### 3.2.2.1. (Des)Ordres
 The first image obtained from the describtion provided by [Astica](Astica.ai) can be seen below:
+
 ![DesOrdresAstica](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-13.png)
 
 The first image obtained from the describtion provided by [Clip Interrogator](https://github.com/pharmapsychotic/clip-interrogator) can be seen below:
