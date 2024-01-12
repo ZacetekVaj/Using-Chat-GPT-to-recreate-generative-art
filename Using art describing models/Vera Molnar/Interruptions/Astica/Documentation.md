@@ -3,7 +3,8 @@
 [Models website](https://www.astica.org/vision/describe/)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Astica/Images/image.jpg)
 [Interruptions](https://dam.org/museum/artists_ui/artists/molnar-vera/interruptions/)
 
 **Output:**
@@ -79,7 +80,8 @@ void setup() {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Astica/Images/image-1.png)
 
 ### Conclusion
 
@@ -87,7 +89,8 @@ void setup() {
 I have tried trimming down or changing the prompt from [Astica](https://www.astica.org/vision/describe/) to only include relevant information, after each trim i got some of diffrent images. I could not get a good starting image without completely removing the original text and rewriting it. In this case it would be better to start without using this model.
 
 **Some of the other resulting images:**
-![Prvi poskus](images/image-2.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Astica/Images/image-2.png)
 We can obtain good starting code (and therefore image) by changing the original text to this:
 > This image is a black and white photograph of a square piece of paper with lines on it.  The lines are thin in a random pattern that covers the entire square, they are of same length.
 The dominant colors in this image are white and black.
@@ -124,8 +127,7 @@ void crumpledPaper() {
 ```
 and the resulting image being:
 
-
-![Prvi poskus](images/image-3.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/Astica/Images/image-3.png)
 
 but in this case the whole text was pretty much scraped and rewriten. In conclusion it would have been just easier to describe the image manualy from the beggining. 
 
