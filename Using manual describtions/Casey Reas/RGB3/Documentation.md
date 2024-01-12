@@ -46,7 +46,8 @@ void drawLine(int centerX, int centerY, int size, float angle) {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image.png)
 
 **Prompt:**
 The lines should start from one side of the canvas and stretch to the other
@@ -85,7 +86,8 @@ void drawLine(float x1, float y1, float x2, float y2, float angle) {
 
 ```
 **Resulting image:**
-![Drugi poskus](images/image-1.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-1.png)
 
 **Prompt:**
 He creates many of the same lines, not just one, all are evenly spaced and there is a random chance of a line not being drawn
@@ -130,8 +132,10 @@ void drawLines(float maxWidth, float y, float angle) {
   }
 }
 ```
+
 **Resulting image:**
-![Tretji poskus](images/image-2.png)
+
+![Tretji poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-2.png)
 
 **Prompt:**
 The lines should still extend from one side of the canvas to the other
@@ -176,8 +180,10 @@ void drawLines(float start, float end, float y, float angle) {
   }
 }
 ```
+
 **Resulting image:**
-![Četrti poskus](images/image-3.png)
+
+![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-3.png)
 
 **Prompt:**
 In your case the lines do not go from one side of the canvas to the other at the desired angle
@@ -224,8 +230,10 @@ void drawLines(float y, float angle) {
 }
 
 ```
+
 **Resulting image:**
-![Peti poskus](images/image-4.png)
+
+![Peti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-4.png)
 
 **Prompt:**
 Lines still dont start on the edge of canvas
@@ -270,8 +278,10 @@ void drawLines(float start, float end, float angle) {
 }
 
 ```
+
 **Resulting image:**
-![Šesti poskus](images/image-5.png)
+
+![Šesti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-5.png)
 
 **Prompt:**
 Try using diffrent angles
@@ -317,8 +327,10 @@ void drawLines(float start, float end, float angle) {
 }
 
 ```
+
 **Resulting image:**
-![Sedmi poskus](images/image-6.png)
+
+![Sedmi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-6.png)
 
 **Prompt:**
 His lines are thinner and softer colored
@@ -365,8 +377,10 @@ void drawLines(float start, float end, float angle) {
   }
 }
 ```
+
 **Resulting image:**
-![Osmi poskus](images/image-7.png)
+
+![Osmi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-7.png)
 
 **Prompt:**
 Make it so the lines extend to the whole canvas 
@@ -411,8 +425,10 @@ void drawLines(float angle) {
 }
 
 ```
+
 **Resulting image:**
-![Deveti poskus](images/image-8.png)
+
+![Deveti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-8.png)
 **Prompt:**
 Now make the lines closer together aswell
 
@@ -456,8 +472,10 @@ void drawLines(float angle, int stepSize) {
 }
 
 ```
+
 **Resulting image:**
-![Deseti poskus](images/image-9.png)
+
+![Deseti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-9.png)
 **Prompt:**
 There should be a random period of lines not being drawn
 
@@ -517,8 +535,10 @@ void drawLines(float angle, int stepSize) {
 
 
 ```
+
 **Resulting image:**
-![Enajsti poskus](images/image-10.png)
+
+![Enajsti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-10.png)
 **Prompt:**
 The chance of no draw period should be random, not after 50 lines
 
@@ -579,9 +599,13 @@ void drawLines(float angle, int stepSize) {
   }
 }
 ```
+
 **Resulting image:**
-![Dvanajsti poskus](images/image-11.png)
+
+![Dvanajsti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-11.png)
+
 **Additional:**
 In line "if (random(1) > 0.2)" was replaced with "if(true)".
+
 **Image for angles 71°-13°-68°:**
-![Končen poskus](images/image-12.png)
+![Končen poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/RGB3/Images/image-12.png)
