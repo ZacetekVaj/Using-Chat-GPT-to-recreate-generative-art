@@ -4,7 +4,8 @@
 [Models website](https://github.com/daanelson/MiniGPT-4)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/minigpt-4/Images/image.jpg)
 [Interruptions](https://dam.org/museum/artists_ui/artists/molnar-vera/interruptions/)
 
 **Prompt:**
@@ -59,7 +60,8 @@ void drawJaggedLine(float x, float y, float len, float thickness) {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/minigpt-4/Images/image-1.png)
 
 After changing the prompt to [MiniGPT-4](https://github.com/daanelson/MiniGPT-4) to:
 >This is generative art image, describe it in great detail, do not miss the fact that there are some parts of the lines which are missing, lines are randomly spread out without any patterns. 
@@ -91,7 +93,8 @@ void setup() {
 }
 ```
 **Resulting image from the second prompt:**
-![Drugi poskus](images/image-2.png)
+
+![Drugi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/minigpt-4/Images/image-2.png)
 
 Because the starting image was this good, we made some more prompts to chat-gpt to try to change it so it is more simular to the original image.
 The next prompt was:
@@ -125,7 +128,8 @@ void setup() {
 
 ```
 **Resulting image from next prompt:**
-![Prvi poskus](images/image-3.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Interruptions/minigpt-4/Images/image-3.png)
 ### Conclusion
 Suprisingly in this case [MiniGPT-4](https://github.com/daanelson/MiniGPT-4) has made it much easier for us to replicate the original image. Because of such a good original image the number of prompts to chat-gpt has been reduced from 5 (without using [MiniGPT-4](https://github.com/daanelson/MiniGPT-4)) to 2 with using [MiniGPT-4](https://github.com/daanelson/MiniGPT-4). In conclusion this model could be used to describe the image for you, atleast if the image is simple enough.
 
