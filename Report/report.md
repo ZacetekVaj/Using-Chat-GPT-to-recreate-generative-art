@@ -151,6 +151,7 @@ The first image obtained from the a bit more refined describtion provided by [Mi
 ![InterruptionsMiniGPT](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-1-3.png)
 
 Meanwhile the manualy described generated image can be seen below:
+
 ![InterruptionsManual](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-10.png)
 
 Even though it may not be immediately evident, upon closer examination, the majority of images generated from automated descriptions fall short when compared to the one obtained from manual descriptions. After a refinement process, it became clear that the manually described image was significantly closer to the original. The manually described image effectively captured lines at different angles, facilitating a straightforward instruction to Chat-GPT to extend those lines, populate the screen with them, and randomly skip a few.
