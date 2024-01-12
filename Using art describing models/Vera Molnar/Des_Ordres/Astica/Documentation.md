@@ -3,7 +3,8 @@
 [Models website](https://www.astica.org/vision/describe/)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Astica/Images/image.jpg)
 [Des Ordres](https://dam.org/museum/artists_ui/artists/molnar-vera/des-ordres/)
 
 **Output:**
@@ -80,7 +81,8 @@ void generatePaper() {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Astica/Images/image-1.png)
 
 ### Conclusion
 
@@ -88,8 +90,9 @@ void generatePaper() {
 I have tried trimming down the prompt from [Astica](https://www.astica.org/vision/describe/) to only include relevant information, after each trim i got some of diffrent images, they were all looking like chess boards, which was better than in the instance of RGB-3 image, but it was still easier to just describe the image normaly from the start without using this model.
 
 **Some of the other resulting images:**
-![Prvi poskus](images/image-2.png)
-![Prvi poskus](images/image-3.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Astica/Images/image-2.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Astica/Images/image-3.png)
 
 
 After trying to modify the starting text i receved from  [Astica](https://www.astica.org/vision/describe/) all of the images were not useful enough for me to easily replecate the starting image.
