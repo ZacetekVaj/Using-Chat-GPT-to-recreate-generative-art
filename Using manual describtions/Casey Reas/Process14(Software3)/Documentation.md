@@ -27,6 +27,7 @@ E2: F1 + B1 + B5
 E3: F2 + B1 + B3 + B5
 E4: F1 + B1 + B2 + B3
 E5: F2 + B1 + B5 + B6 + B7
+
 **Code from the anwser:**
 ```java
 float x, y; // Position of the circle
@@ -80,6 +81,7 @@ void mousePressed() {
 
 **Prompt:**
 Now use E4, code you wrote and this describtion to create a code in processing for it: A rectangular surface filled with instances of E4, each with a different size and direction. Display the intersections of E4 by drawing a circle at each point of contact. Set the size of each circle relative to the distance between the centers of the overlapping E4's. Draw the smallest possible circle as white and the largest as black, with varying grays representing sizes in between. E4 needs to still be defined by the code as previously
+
 **Code from the anwser:**
 ```java
 ArrayList<E4Instance> elements = new ArrayList<E4Instance>(); // List to store instances of E4
@@ -175,6 +177,7 @@ class E4Instance {
 
 **Prompt:**
 Add more colors, biggest circle should be black, color should go from black to camo green, gray, gray blue, pink and at the end smallest circles should be white. Remove the outline for circles.
+
 **Code from the anwser:**
 ```java
 ArrayList<E4Instance> elements = new ArrayList<E4Instance>(); // List to store instances of E4
@@ -411,6 +414,7 @@ class E4Instance {
 **Image:**
 
 ![Četrti poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20manual%20describtions/Casey%20Reas/Process14(Software3)/Images/image-3.png)
+
 **Additional:**
 In the picture, we can observe that the sizes of the drawn circles depend on their positions. Since I couldn't formulate a question to make the sizes of the drawn circles correct, in the next step, I asked to write the code so that the sizes of the drawn circles would be random, to achieve at least a somewhat similar distribution as in the original picture.
 **Prompt:**
