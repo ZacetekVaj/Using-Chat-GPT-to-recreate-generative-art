@@ -73,6 +73,7 @@ While ChatGPT has successfully recreated several aspects of the original image, 
 #### 3.1.2. Vera molnar:
 ##### 3.1.2.1: (Des)Ordres
 [(Des)Ordres](https://dam.org/museum/artists_ui/artists/molnar-vera/des-ordres/) is a series of images showcasing a deliberate arrangement of concentric squares that are randomly distributed, introducing a sense of disorder and tension within the composition. [One of the original images is displayed below:](https://dam.org/museum/artists_ui/artists/molnar-vera/des-ordres/)
+
 ![DesOrdres](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-5.png)
 
 Meanwhile, the ChatGPT-generated image is presented below:
