@@ -4,7 +4,8 @@
 [Models website](https://github.com/pharmapsychotic/clip-interrogator)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Clip-interrogator/Images/image.jpg)
 
 **Output:**
 a close up of a drawing of a square pattern with squares, kimitake yoshioka, by Ai Weiwei, benjamin vnuk, contemporary art, iranian, mingei, many small details, box, throw, ashy, 62 x 47 inches, maze-like, wall, hut, in a square, excitement, volume
@@ -41,7 +42,8 @@ void drawSquares() {
 }
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/Clip-interrogator/Images/image-1.png)
 
 ### Conclusion
 
