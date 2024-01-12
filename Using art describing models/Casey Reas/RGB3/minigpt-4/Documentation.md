@@ -4,7 +4,8 @@
 [Models website](https://github.com/daanelson/MiniGPT-4)
 
 **Input image:**
-![Prvi poskus](images/image.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image.png)
 
 **Prompt:**
 This is an image of generative art. Describe this image in very great detail and in such a way that it could be recreated by image generating AI, also include the fact that some of the lines are randomly skipped.
@@ -69,17 +70,18 @@ color randomColor() {
 
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image-1.png)
 
 ### Conclusion
 
 **Some of the other resulting images:**
 These were a couple of images obtained from using slightly diffrent prompts for [MiniGPT-4](https://github.com/daanelson/MiniGPT-4).
 
-![Prvi poskus](images/image-2.png)
-![Prvi poskus](images/image-3.png)
-![Prvi poskus](images/image-4.png)
-![Prvi poskus](images/image-5.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image-2.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image-3.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image-4.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Casey%20Reas/RGB3/minigpt-4/Images/image-5.png)
 
 After trying diffrent prompts for [MiniGPT-4](https://github.com/daanelson/MiniGPT-4) all of the images were very far from the original, so much so that it was easier trying to describe the image without using the model from the start.
 
