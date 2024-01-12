@@ -4,7 +4,8 @@
 [Models website](https://github.com/daanelson/MiniGPT-4)
 
 **Input image:**
-![Prvi poskus](images/image.jpg)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/minigpt-4/Images/image.jpg)
 
 **Prompt:**
 This is an image of generative art. Describe this image in very great detail and in such a way that it could be recreated by image generating AI, also include the fact that the small squares are within the larger ones and that the image is not a like a chess board.
@@ -52,16 +53,17 @@ void drawSquares(float x, float y, float size, int level) {
 }
 ```
 **Resulting image:**
-![Prvi poskus](images/image-1.png)
+
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/minigpt-4/Images/image-1.png)
 
 ### Conclusion
 
 **Some of the other resulting images:**
 These were a couple of images obtained from using slightly diffrent prompts for [MiniGPT-4](https://github.com/daanelson/MiniGPT-4), or by slightly modifiying the generated prompts.
 
-![Prvi poskus](images/image-2.png)
-![Prvi poskus](images/image-3.png)
-![Prvi poskus](images/image-4.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/minigpt-4/Images/image-2.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/minigpt-4/Images/image-3.png)
+![Prvi poskus](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Using%20art%20describing%20models/Vera%20Molnar/Des_Ordres/minigpt-4/Images/image-4.png)
 
 After trying diffrent prompts for [MiniGPT-4](https://github.com/daanelson/MiniGPT-4) all of the images were very far from the original. Images were diffrent enough that it would be easier to describe them without using the model.
 
