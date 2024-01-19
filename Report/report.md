@@ -34,6 +34,66 @@ The recreated image is displayed below:
 
 ![RGB3 - recreation](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-12.png)
 
+<details>
+  <summary>
+    Click for finalised code
+  </summary>
+  ```java
+int lineCount = 0;
+int period = 0;
+int noDrawPeriod = 0;
+
+void setup() {
+  size(500, 500);
+  background(255);
+  plotRGB3(-71, -13, -68); // Example angles: 45°, 90°, 135°
+}
+
+void plotRGB3(int redAngle, int greenAngle, int blueAngle) {
+  strokeWeight(1); // Adjust this for thinner lines
+  int red = color(255, 0, 0, 50); // Adjust alpha (last parameter) for softer colors
+  int green = color(0, 255, 0, 50);
+  int blue = color(0, 0, 255, 50);
+  
+  // Red lines
+  stroke(red);
+  drawLines(radians(redAngle), 5); // Adjust step size for closer lines
+  
+  // Green lines
+  stroke(green);
+  drawLines(radians(greenAngle), 5); // Adjust step size for closer lines
+  
+  // Blue lines
+  stroke(blue);
+  drawLines(radians(blueAngle), 5); // Adjust step size for closer lines
+}
+
+void drawLines(float angle, int stepSize) {
+  float diagonal = sqrt(sq(width) + sq(height)); // Diagonal length of canvas
+  
+  for (float y = -diagonal; y < height + diagonal; y += stepSize) {
+    if (noDrawPeriod > 0) { // During no-draw period
+      noDrawPeriod--;
+    } else {
+      if (lineCount < 50) { // Draw 50 lines
+        if (true) { // Adjust this probability for lines not being drawn
+          float x1 = -diagonal * cos(angle); // Extend beyond canvas width
+          float y1 = y - diagonal * sin(angle); // Match y-coordinates for angle continuity
+          float x2 = width + diagonal * cos(angle); // Extend beyond canvas width
+          float y2 = y + diagonal * sin(angle); // Match y-coordinates for angle continuity
+          line(x1, y1, x2, y2);
+        }
+        lineCount++;
+      } else {
+        noDrawPeriod = int(random(10, 20)); // Random no-draw period between 50 and 150 iterations
+        lineCount = 0; // Reset line counter
+      }
+    }
+  }
+}
+  ```
+</details>
+
 From both images, it is evident that they share a similar color scheme. The primary distinction lies in the intensity of colors in the recreated image. Nevertheless, Chat-GPT's generated code successfully captures most of the essential details:
 
 - Randomly skipped lines are present in both images, preserving the characteristic style.
@@ -48,6 +108,98 @@ Given that both the original and recreated images predominantly share the same d
 
 Part of the recreated artwork is displayed below:
 ![METASOTO - recreation](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-6.png)
+
+<details>
+  <summary>
+    Click for finalised code
+  </summary>
+  ```java
+int numLines = 90; // Number of black lines
+float[] initialYWhite = new float[numLines]; // Initial Y coordinates for white lines
+float[] initialAngle = new float[numLines]; // Initial angles for white lines
+float[] speedsWhite = new float[numLines]; // Speed for each white line
+
+float[][] initialCoordinatesBlack; // Initial coordinates for black lines
+float[][] initialAnglesBlack; // Initial angles for black lines
+
+void setup() {
+  size(800, 800);
+  background(0); // Set background to black
+  stroke(255); // Set stroke color to white
+
+  initialCoordinatesBlack = new float[numLines][2]; // Storing initial coordinates for black lines
+  initialAnglesBlack = new float[numLines][1]; // Storing initial angles for black lines
+  
+  // Initialize white lines
+  for (int i = 0; i < numLines; i++) {
+    initialYWhite[i] = random(height);
+    initialAngle[i] = random(TWO_PI); // Random initial angles for white lines
+    
+    // Assigning varied speed ranges to different lines
+    if (i % 3 == 0) {
+      speedsWhite[i] = random(0.5, 1.5); // Slower speed for lines with index divisible by 3
+    } else if (i % 3 == 1) {
+      speedsWhite[i] = random(1.5, 3); // Moderate speed for lines with index remainder 1
+    } else {
+      speedsWhite[i] = random(3, 5); // Faster speed for lines with index remainder 2
+    }
+  }
+
+  // Initialize black lines
+  for (int i = 0; i < numLines; i++) {
+    initialCoordinatesBlack[i][0] = random(width); // Random initial x-coordinate for black lines
+    initialCoordinatesBlack[i][1] = random(height); // Random initial y-coordinate for black lines
+    initialAnglesBlack[i][0] = random(TWO_PI); // Random initial angles for black lines
+  }
+}
+
+void draw() {
+  // Move white lines
+  background(0); // Clear the canvas on each frame
+
+  // Draw moving white lines
+  for (int i = 0; i < numLines; i++) {
+    stroke(255);
+    float x1 = width; // Start of line at right edge
+    float x2 = map(frameCount % (width * 10), 0, width * 10, width, -width * 9); // End of line extended indefinitely beyond the left edge
+    float speedAdjustedX2 = x2 - speedsWhite[i] * (frameCount % (width * 10)); // Adjust speed for slower/faster movement
+    float adjustedY = initialYWhite[i] - 20 * tan(initialAngle[i]); // Use initial angle and position
+    
+    line(x1, initialYWhite[i], speedAdjustedX2, adjustedY); // Draw white lines moving from right to left at their initial angle
+  }
+
+  // Draw static black lines (web-like arrangement)
+  stroke(0); // Set stroke color to black
+  for (int i = 0; i < numLines; i++) {
+    float x1 = initialCoordinatesBlack[i][0];
+    float y1 = initialCoordinatesBlack[i][1];
+    float x2 = x1 + 320 * cos(initialAnglesBlack[i][0]); // Longer black lines in x-direction
+    float y2 = y1 + 320 * sin(initialAnglesBlack[i][0]); // Longer black lines in y-direction
+    
+    line(x1, y1, x2, y2);
+  }
+}
+
+void mousePressed() {
+  // Reset white lines
+  for (int i = 0; i < numLines; i++) {
+    initialYWhite[i] = random(height);
+    
+    // Assigning varied speed ranges to different lines
+    if (i % 3 == 0) {
+      speedsWhite[i] = random(0.5, 1.5); // Slower speed for lines with index divisible by 3
+    } else if (i % 3 == 1) {
+      speedsWhite[i] = random(1.5, 3); // Moderate speed for lines with index remainder 1
+    } else {
+      speedsWhite[i] = random(3, 5); // Faster speed for lines with index remainder 2
+    }
+  }
+  
+
+  
+}
+  ```
+</details>
 
 From both artworks, it is apparent that they share similar concepts. The primary difference lies in the quantity of lines and the manner in which black and white lines intersect. In the original, the interaction between black and white lines is randomized, determining whether the black line appears in front or behind the white line upon intersection. Conversely, in the generated artwork, black lines consistently appear in front of all intersecting white lines.
 
@@ -66,6 +218,124 @@ The image generated by Chat-GPT can be viewed below:
 
 ![Alt text](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-4.png)
 
+<details>
+  <summary>
+    Click for finalised code
+  </summary>
+  ```java
+ArrayList<E4Instance> elements = new ArrayList<E4Instance>(); // List to store instances of E4
+ArrayList<PVector> intersections = new ArrayList<PVector>(); // List to store intersection points
+ArrayList<PVector> intersectionDisplay = new ArrayList<PVector>(); // List to store displayed intersection points
+int numberOfElements = 30; // Number of E4 instances
+float maxCircleSize = 50; // Maximum circle size
+
+void setup() {
+  size(200,200);
+  
+  // Create a rectangular surface filled with instances of E4 with varying size ranges
+  for (int i = 0; i < numberOfElements; i++) {
+    float x = random(width);
+    float y = random(height);
+    float size = random(10, 50); // Adjusted size range
+    float speedX = random(-2, 2);
+    float speedY = random(-2, 2);
+    elements.add(new E4Instance(x, y, size, speedX, speedY));
+  }
+}
+
+void draw() {
+  background(255);
+  
+  // Move and display each instance of E4
+  for (E4Instance e : elements) {
+    e.update();
+    e.display();
+  }
+  
+  // Check for intersections between E4 instances
+  intersections.clear(); // Clear previous intersections
+  
+  for (int i = 0; i < elements.size(); i++) {
+    for (int j = i + 1; j < elements.size(); j++) {
+      PVector intersection = elements.get(i).checkIntersection(elements.get(j));
+      if (intersection != null) {
+        if (!intersectionDisplay.contains(intersection)) {
+          intersectionDisplay.add(intersection);
+        }
+      }
+    }
+  }
+  
+  // Draw circles at displayed intersection points
+  noStroke(); // Remove outline
+  for (PVector intersection : intersectionDisplay) {
+    float sizeGradient = intersection.z;
+    fill(getCircleColor(sizeGradient));
+    ellipse(intersection.x, intersection.y, sizeGradient / 2, sizeGradient / 2); // Adjusted circle size
+  }
+}
+
+color getCircleColor(float sizeGradient) {
+  color c;
+  if (sizeGradient < 10) {
+    c = color(0); // Black
+  } else if (sizeGradient >= 10 && sizeGradient < 30) {
+    c = color(50, 150 + (sizeGradient - 10) * 3, 80); // Camo green
+  } else if (sizeGradient >= 30 && sizeGradient < 70) {
+    c = color(150 + (sizeGradient - 30) * 2, 150 + (sizeGradient - 30) * 1.5, 150 + (sizeGradient - 30) * 1.25); // Gray
+  } else if (sizeGradient >= 70 && sizeGradient < 110) {
+    c = color(150 + (sizeGradient - 70) * 1.5, 150 + (sizeGradient - 70) * 1.25, 255); // Gray blue
+  } else if (sizeGradient >= 110 && sizeGradient < 150) {
+    c = color(255, 180 - (sizeGradient - 110) * 1.5, 220); // Darker pink
+  } else {
+    c = color(255, 255 - sizeGradient * 3, 255); // White
+  }
+  return c;
+}
+
+class E4Instance {
+  float x, y;
+  float size;
+  float speedX, speedY;
+
+  E4Instance(float xPos, float yPos, float s, float sx, float sy) {
+    x = xPos;
+    y = yPos;
+    size = s;
+    speedX = sx;
+    speedY = sy;
+  }
+
+  void update() {
+    x += speedX;
+    y += speedY;
+
+    if (x < 0 || x > width) {
+      speedX *= -1;
+    }
+    if (y < 0 || y > height) {
+      speedY *= -1;
+    }
+  }
+
+  void display() {
+    float sizeGradient = map(size, 10, 50, 255, 0); // Mapping size to color gradient
+    fill(getCircleColor(sizeGradient));
+    ellipse(x, y, size, size);
+  }
+
+  PVector checkIntersection(E4Instance other) {
+    float distance = dist(x, y, other.x, other.y);
+    if (distance < (size + other.size) / 2) {
+      float newSize = min(size, other.size); // Set the intersecting size to the minimum size
+      return new PVector((x + other.x) / 2, (y + other.y) / 2, newSize);
+    }
+    return null;
+  }
+}
+  ```
+</details>
+
 At first glance, the images may appear significantly different, but a closer inspection reveals that Chat-GPT has successfully recreated many of the underlying concepts. In both images, circles are present, and collisions result in the generation of a new circle. However, a notable distinction exists in Chat-GPT's rendition: the size and color of the generated circle are not contingent upon the distance between the centers of intersecting circles, as outlined in the original description.
 
 - Both artworks incorporate element 4, showcasing all of its specified behaviors.
@@ -83,6 +353,59 @@ While Chat-GPT has successfully recreated several aspects of the original image,
 Meanwhile, the Chat-GPT-generated image is presented below:
 ![DesOrdresGPT](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-8.png)
 
+<details>
+  <summary>
+    Click for finalised code
+  </summary>
+  ```java
+int minNumSquares = 5; // Minimum number of concentric squares inside each square
+int maxNumSquares = 8; // Maximum number of concentric squares inside each square
+float maxRotationOuter = PI / 64; // Maximum rotation angle for outer squares (reduced)
+float maxRotationInner = PI / 128; // Maximum rotation angle for inner squares (reduced further)
+int gridSize = 20; // Number of squares in the grid
+float squareSpacing = 0; // Spacing between squares
+
+void setup() {
+  size(800, 800);
+  background(255);
+  smooth();
+  noFill();
+  stroke(0);
+  rectMode(CENTER);
+  
+  float squareSize = width / gridSize; // Size for each square
+  
+  for (int i = 0; i < gridSize; i++) {
+    for (int j = 0; j < gridSize; j++) {
+      float posX = (j + 0.5) * (squareSize + squareSpacing);
+      float posY = (i + 0.5) * (squareSize + squareSpacing);
+      int numSquares = int(random(minNumSquares, maxNumSquares + 1));
+      float rotation = random(-maxRotationOuter, maxRotationOuter);
+      drawConcentricSquares(posX, posY, squareSize, numSquares, rotation);
+    }
+  }
+}
+
+void drawConcentricSquares(float x, float y, float size, int numSquares, float rotation) {
+  float stepSize = size / numSquares;
+  
+  for (int i = 0; i < numSquares; i++) {
+    float newSize = stepSize * (i + 1);
+    float newRotation = random(-maxRotationInner, maxRotationInner);
+    drawConcentricSquare(x, y, newSize, newRotation);
+  }
+}
+
+void drawConcentricSquare(float x, float y, float size, float rotation) {
+  pushMatrix();
+  translate(x, y);
+  rotate(rotation);
+  rect(0, 0, size, size);
+  popMatrix();
+}
+  ```
+</details>
+
 In general, the images exhibit a remarkable similarity, with Vera's original image featuring variations in line thickness and a more pronounced tilt in the squares. Some squares stand out more prominently. In Chat-GPT's rendition, the lines are mostly uniform with minor differences, but the whole composition is highly comparable to that of the original, capturing the essence of the pattern and its deliberate disorder.
 
 - Both images contain concentric squares
@@ -98,6 +421,113 @@ While Chat-GPT has successfully captured the overall essence of Vera's (Des)Ordr
 
 Meanwhile, the Chat-GPT-generated image is presented below:
 ![Alt text](https://github.com/ZacetekVaj/Using-Chat-GPT-to-recreate-generative-art/blob/main/Report/Images/image-5-1.png)
+
+<details>
+  <summary>
+    Click for finalised code
+  </summary>
+  ```java
+ArrayList<Line> lines; // Arraylist to store lines
+ArrayList<PVector> interruptions; // Arraylist to store interrupted areas
+
+void setup() {
+  size(900, 900);
+  background(255);
+  
+  lines = new ArrayList<Line>();
+  int numLines = 10000; // Number of lines
+  
+  // Create the initial grid of straight lines
+  for (int i = 0; i < numLines; i++) {
+    Line line = new Line(random(width), random(height), random(TWO_PI)); // Random x, y, and angle
+    lines.add(line);
+  }
+  
+  // Apply rotations
+  applyRotations();
+  
+  // Create interrupted areas
+  interruptions = createInterruptions();
+  
+  // Draw the lines
+  for (Line line : lines) {
+    line.display();
+  }
+  
+  // Draw interrupted areas
+  noStroke();
+  fill(255);
+  for (PVector interrupt : interruptions) {
+    rect(interrupt.x, interrupt.y, 50, 50); // Adjust size of the interrupted areas
+  }
+}
+
+void applyRotations() {
+  // Apply random rotations to each line
+  for (Line line : lines) {
+    line.rotate(random(-PI/4, PI/4)); // Random rotation within a range
+  }
+}
+
+ArrayList<PVector> createInterruptions() {
+  ArrayList<PVector> interrupts = new ArrayList<PVector>();
+  
+  // Create interrupted areas by defining regions without lines
+  for (int i = 0; i < width; i += 100) {
+    for (int j = 0; j < height; j += 100) {
+      if (random(1) > 0.9) { // Adjust the probability for interruptions
+        interrupts.add(new PVector(i, j));
+      }
+    }
+  }
+  
+  return interrupts;
+}
+
+class Line {
+  float x, y, angle;
+  float length = 20; // Shorter length of the line
+  
+  Line(float x, float y, float angle) {
+    this.x = x;
+    this.y = y;
+    this.angle = angle;
+  }
+  
+  void rotate(float rotation) {
+    angle += rotation; // Apply rotation to the angle of the line
+  }
+  
+  boolean isInsideInterruption(float x1, float y1, float x2, float y2) {
+    // Check if the line segment intersects with any of the interruptions
+    for (PVector interrupt : interruptions) {
+      if (x1 >= interrupt.x && x1 <= interrupt.x + 50 && y1 >= interrupt.y && y1 <= interrupt.y + 50) {
+        return true;
+      }
+      if (x2 >= interrupt.x && x2 <= interrupt.x + 50 && y2 >= interrupt.y && y2 <= interrupt.y + 50) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
+  void display() {
+    // Display the line
+    float xEnd = x + cos(angle) * length;
+    float yEnd = y + sin(angle) * length;
+    
+    boolean insideInterruptionStart = isInsideInterruption(x, y, x, y);
+    boolean insideInterruptionEnd = isInsideInterruption(xEnd, yEnd, xEnd, yEnd);
+    
+    if (!insideInterruptionStart && !insideInterruptionEnd) {
+      stroke(0);
+      strokeWeight(1);
+      line(x, y, xEnd, yEnd);
+    }
+  }
+}
+  ```
+</details>
 
 The density of lines in Chat-GPT's artwork is higher, but the core concept of the images remains very similar. The interruptions in Chat-GPT's rendition are slightly more stringent, leading to the erasure of most lines within them. Despite this, the overall resemblance to the original is strikingly close.
 
