@@ -38,7 +38,8 @@ The recreated image is displayed below:
   <summary>
     Click for finalised code
   </summary>
-  ```java
+  
+```java
 int lineCount = 0;
 int period = 0;
 int noDrawPeriod = 0;
@@ -91,7 +92,8 @@ void drawLines(float angle, int stepSize) {
     }
   }
 }
-  ```
+```
+
 </details>
 
 From both images, it is evident that they share a similar color scheme. The primary distinction lies in the intensity of colors in the recreated image. Nevertheless, Chat-GPT's generated code successfully captures most of the essential details:
