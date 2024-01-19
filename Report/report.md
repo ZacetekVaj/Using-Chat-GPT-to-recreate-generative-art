@@ -439,6 +439,7 @@ Meanwhile, the Chat-GPT-generated image is presented below:
   <summary>
     Click for finalised code
   </summary>
+  
 ```java
   
 ArrayList<Line> lines; // Arraylist to store lines
